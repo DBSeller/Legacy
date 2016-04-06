@@ -1,1 +1,1 @@
-# legacy
+# LegacyCompatibilização de aplicações escritas em PHP 5.3+ para versões mais novas.
