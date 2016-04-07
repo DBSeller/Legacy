@@ -21,7 +21,7 @@
 
   ],
   "require": {},
-  "licence": "GPL2",
+  "licence": "LGPL-2.0",
   "autoload" : {                           
     "files": [ 
       "src/bootstrap_PHP53.php", 
