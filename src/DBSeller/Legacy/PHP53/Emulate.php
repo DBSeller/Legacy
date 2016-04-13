@@ -1,11 +1,11 @@
-<?php 
+<?php
 
 namespace DBSeller\Legacy\PHP53;
 
 class Emulate {
 
   private static $egpcs = array(
-    'ENV', 'GET', 'POST', 'COOKIE', 'SERVER', 'SESSION'
+    'ENV', 'GET', 'POST', 'COOKIE', 'SERVER', 'SESSION', 'FILES'
   );
 
   /**
@@ -82,7 +82,7 @@ class Emulate {
     reset($_GET);
     reset($_POST);
     reset($_COOKIE);
-    reset($_REQUEST);    
+    reset($_REQUEST);
   }
 
   /**
@@ -91,7 +91,7 @@ class Emulate {
    * @link http://php.net/manual/pt_BR/function.session-register.php
    */
   public static function sessionRegister(){
-    
+
     $args = func_get_args();
     foreach ($args as $key){
 
@@ -100,7 +100,7 @@ class Emulate {
   }
 
   /**
-   * Emula o comportamento da função session_is_registered 
+   * Emula o comportamento da função session_is_registered
    *
    * @link http://php.net/manual/pt_BR/function.session-is-registered.php
    * @static
@@ -114,7 +114,7 @@ class Emulate {
    * Emula o comportamento da função sesion_unregister
    *
    * @link http://php.net/manual/pt_BR/function.session-unregister.php
-   * @static  
+   * @static
    * @param mixed $key
    */
   public static function sessionUnregister($key){
