@@ -21,6 +21,7 @@
   ],
 
   "licence": "GPL-2.0",
+  
   "autoload" : {
     "files": [
       "bootstrap/PHP_53.php",
@@ -33,8 +34,8 @@
       "DBSeller\\Legacy\\Tests\\" : "tests/"
     }
   },
+
   "require-dev": {
-    "phpunit/phpunit": "^4.8||^5.4",
-    "rafaelnery/phputils": "^2.0"
+    "phpunit/phpunit": "^4.8||^5.4"
   }
 }

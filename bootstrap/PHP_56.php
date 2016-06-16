@@ -1,5 +1,5 @@
 <?php
-use DBSeller\PHP56\Legacy\Emulate;
+use DBSeller\Legacy\PHP56\Emulate;
 
 if (version_compare(PHP_VERSION, '7.0') >= 0) {
 
